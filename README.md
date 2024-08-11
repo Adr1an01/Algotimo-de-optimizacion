@@ -30,7 +30,7 @@ Para el uso de este tipo de paso es necesario hacer :
 
 Donde :
 - f : Es la función objetivo
-- f : Gradiente de la función en un punto ( $\nabla$ f($x_k$))
+- f : Gradiente de la función en un punto ($\nabla$ f($x_k$))
 - x0 : Es el punto $x_k$
 - **Implementación de Búsqueda unidimensional**: [`unidimensional.py`](Adr1an01/Algotimo-de-optimizacion/Step%20Size/unidimensional.py).
 

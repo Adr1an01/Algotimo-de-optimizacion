@@ -1,8 +1,14 @@
 # Descenso de gradiente
 
-# Tamaño de paso
 
-$$
-E = mc^2
-$$
-Realziar cambios  al readme desde visual studio code
+
+# Tamaños de paso
+
+## Búsquead de Armijo
+Dados $s, \beta, \sigma$ con $0<\beta<1$, $0<\sigma<1$, definir: 
+$$\lambda_k = s\beta^{m_k}, d^k = -\nabla f(x_k)$$
+Donde $m_k$ es el menor entero no negativo en :
+$$f(x_k)-f(x^k+s\beta^{m_k} d^k) \geq -\sigma \beta^{m_k} s \nabla f(x_k)^T d^k$$
+
+## Búsqueda unidimensional
+$$\lambda_k \in  \text{arg min}\{f(x^k-\lambda \nabla f(x^k)); \quad \lambda\geq 0\}$$

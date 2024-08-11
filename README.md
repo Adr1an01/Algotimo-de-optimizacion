@@ -3,7 +3,7 @@
 
 
 # Tamaños de paso
-Para la implemetnación de los tamaños de pasos se consideró funciones de $3$ variables
+Para la implemetnación de los tamaños de pasos se consideró función de $3$ variables
 
 ## Búsquead de Armijo
 Dados $s, \beta, \sigma$ con $0<\beta<1$, $0<\sigma<1$, definir: 

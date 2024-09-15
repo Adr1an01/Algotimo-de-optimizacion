@@ -14,7 +14,7 @@ Donde $m_k$ es el menor entero no negativo en :
 
 $$f(x_k)-f(x^k+s\beta^{m_k} d^k) \geq -\sigma \beta^{m_k} s \nabla f(x_k)^T d^k$$
 
-- **Implementación de Búsqueda de Armijo**: [`armijo.py`](Adr1an01/Algotimo-de-optimizacion/Step%20Size/armijo.py).
+- **Implementación de Búsqueda de Armijo**: [`armijo.py`](StepSize/armijo.py).
 
 
 
@@ -32,5 +32,5 @@ Donde :
 - f : Es la función objetivo
 - f : Gradiente de la función en un punto ($\nabla$ f($x_k$))
 - x0 : Es el punto $x_k$
-- **Implementación de Búsqueda unidimensional**: [`unidimensional.py`](Adr1an01/Algotimo-de-optimizacion/Step%20Size/unidimensional.py).
+- **Implementación de Búsqueda unidimensional**: [`unidimensional.py`](StepSize/unidimensional.py).
 

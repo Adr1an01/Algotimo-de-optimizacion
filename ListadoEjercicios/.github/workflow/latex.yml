@@ -3,30 +3,26 @@ name: Compile LaTeX document
 on:
   push:
     branches:
-      - main  # Esto se ejecutará cuando haya un push en la rama principal
+      - main
     paths:
-      - '**/*.tex'  # El flujo de trabajo se activará cuando se cambien archivos .tex
+      - '**/*.tex'  
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # La acción se ejecutará en un entorno Ubuntu
+    runs-on: ubuntu-latest  
 
     steps:
-      # Paso 1: Descargar los archivos del repositorio
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Paso 2: Instalar LaTeX
       - name: Set up LaTeX
         run: sudo apt-get install texlive-full
 
-      # Paso 3: Compilar el archivo .tex
       - name: Compile LaTeX document
-        run: pdflatex -interaction=nonstopmode main.tex  # Sustituye 'yourfile.tex' por el nombre de tu archivo .tex
+        run: pdflatex -interaction=nonstopmode main.tex  
 
-      # Paso 4: Subir el PDF generado como artefacto
       - name: Upload PDF to GitHub
         uses: actions/upload-artifact@v2
         with:
-          name: document-pdf  # El nombre del artefacto
-          path: lista_nueva.pdf  # El archivo PDF generado, reemplázalo con el nombre de tu archivo .pdf
+          name: document-pdf  
+          path: lista_nueva.pdf  

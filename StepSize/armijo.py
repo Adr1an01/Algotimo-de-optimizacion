@@ -1,6 +1,6 @@
 def b_armijo(fA,x0_):
     fA = sp.sympify(fA)
-    s = 1
+    s = 1.1
     beta = 1/2
     sigma = 1/2
     m=0
@@ -19,4 +19,5 @@ def b_armijo(fA,x0_):
         if(res1-res2 >= res3):
             return s*beta**m,m
         else:
+
             m=m+1
